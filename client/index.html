@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Translator</title>
+    <style>
+      .book-loader {
+        position: relative;
+        margin: auto;
+        width: 100px;
+        height: 100px;
+      }
+      .book-loader .page {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transform-origin: left center;
+        animation: flip 1.2s infinite linear;
+        animation-fill-mode: forwards;
+        background: linear-gradient(135deg, #6366F1, #4F46E5);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
